@@ -1,0 +1,20 @@
+digraph pvn {
+program->Main
+Main[label="Main
+class"]
+Main->io
+io[label="io:IO
+attribute"]
+io->"NewTypeExp"
+Main->main
+main[label="main:Object
+method"]
+main->"BracedExp"
+"BracedExp"[label="{}"]
+BracedExp->"AtsimExp"
+AtsimExp->"IdentifierExp"
+"IdentifierExp"[label=io]
+AtsimExp->"StringExp"
+"StringExp"[label="34"]
+
+}
